@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>User login</title>
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<style type="text/css" media="screen">
+	.image{
+         background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url('lh.jpg');width: 100%;
+		background-size: 100%;
+		background-position: center;
+		background-attachment: fixed;
+	}
+		
+	</style>
+	<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+		<div class="container">
+			
+		
+		<a href="index.html" class="navbar-brand"><img src="hp1.jpg" style="height: 40px; font-size: 50px;"> Hunger Point </a>
+		<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarid">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarid">
+			
+		
+		<ul class="navbar-nav text-center ml-auto">
+			<li nav-item>
+				<a href="index.html" class="nav-link "><i class="fa fa-home" style="font-size: 20px;"></i>Home</a>
+			</li>
+			<li nav-item>
+				<a href="login.html" class="nav-link active">Login</a>
+			</li>
+			<li nav-item>
+				<a href="menu.html" class="nav-link">Menu</a>
+			</li>
+			<li nav-item>
+				<a href="about.html" class="nav-link">About us</a>
+			</li>
+			<li nav-item>
+				<a href="menu.html" class="nav-link">Order now!</a>
+			</li>
+			<li nav-item>
+				<a href="contact.html" class="nav-link">Contact</a>
+			</li>
+		</ul>
+		</div>
+		</div>
+
+	</nav>
+	<div class="jumbotron image">
+		<div class="container" style="height: auto; width: 500px;">
+			<h1 class="text-white text-center">Login Here!</h1>
+			<form>
+				<div class="form-group">
+				<label class="text-white font-weight-bold" for="email">Email</label><input type="email" id="email" name="" class="form-control" placeholder="Email">
+			</div>
+			<div class="form-group">
+				<label class="text-white font-weight-bold"	 for="pass">Password</label><input type="password" id="pass" name="" class="form-control" placeholder="password">
+			</div>
+			<div class="form-group">
+				<input type="checkbox" name="remember">
+				<label class="text-white font-weight-bold"	 for="pass">Remember me!</label>
+			</div>
+			<br>
+			
+			<a class="btn btn-primary btn-block" href="#" role="button" style="margin-left: 20%; width: 50%; ">login</a>				
+
+		</form>
+		</div>
+	</div>
+	
+</body>
+</html>

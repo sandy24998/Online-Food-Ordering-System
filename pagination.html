@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ribbit - A Treehouse Project</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script> <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+    <style>
+     .jumbotron{
+     width:50%;
+     height:50%;
+
+     }
+        .carousel-indicators{
+        bottom:0;
+        }
+        .carousel-indicators .active{
+         background-color:#222;
+        }
+        .carousel-indicators li{
+         border-color:#222;
+        }
+
+    </style>
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand text-muted" href="#">Ribbit</a>
+      </div>
+
+
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About Ribbit</a></li>
+            <li class="dropdown">
+              <a data-toggle="dropdown" data-target="#">Treehouse<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">About Treehouse</a></li>
+                <li><a href="#">Video Library</a></li>
+                <li><a href="#">Learning Adventures</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Plans &amp; Pricing</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- End navbar -->
+    <div id="myCarousel"class="carousel slide jumbotron">
+        <div class="container">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <h1>Self-destructing message app</h1>
+                    <p class="lead">Learn how to build this fun little app by signing up for a Treehouse account today! We'll teach you how to build both apps from scratch!</p>
+                    <p class="btn-group">
+                      <a class="btn btn-success btn-lg" href="#">Download the app</a>
+                       <a class="btn btn-default btn-lg hidden-xs" data-toggle="modal" href="#textModal">Text me the link</a>
+                    </p> 
+
+                </div>
+                <div class="item">
+                    <h1>Learn how to build it for iOS</h1>
+                    <p class="lead">We'll teach you how to build it from scratch!</p>
+                    <p>
+                    <a class="btn btn-success btn-lg" href="#">Get started today!</a>
+                    </p>
+
+                </div>
+
+                <div class="item">
+                    <h1>Learn how to build it for Android</h1>
+                    <p class="lead">We'll teach you how to build it from scratch!</p>
+                      <p>
+                        <a class="btn btn-success btn-lg" href="#">Get started today!</a>
+                      </p> 
+
+                </div>
+            </div>
+        </div>
+     <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="icon-prev"></span>
+    </a>
+
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="icon-next"></span>
+    </a>
+    </div> <!--End Carousel -->
+
+
+      <hr>
+      <div class="pull-right">
+        <p>&copy; 2013 Ribbit - By Treehouse Island, Inc.</p>
+      </div>
+    </div>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
